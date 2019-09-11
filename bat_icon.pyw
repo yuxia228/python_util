@@ -62,7 +62,11 @@ def get_battery_image():
     
     #バッテリー残量
     btr = psutil.sensors_battery()
-    battery = btr.percent # 0~100
+    try:
+        battery = btr.percent # 0~100
+    except:
+        print("No battery on this system.")
+        quit()
     bat_text = "{:d}".format(battery)
     color=(0,0,0)
     if battery >= 60:
