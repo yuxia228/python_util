@@ -2,6 +2,14 @@
 
 DIY python_utility 
 
+## main.pyw
+
+taskbar(task tray)にbatteryの残量をサークルアイコンで表示するためのプログラム
+
+### Requirement
+
+pip3 install psutil opencv-python numpy pathlib2 pystray
+
 ## bat_icon.pyw
 
 taskbar(task tray)にbatteryの残量をサークルアイコンで表示するためのプログラム
@@ -11,6 +19,11 @@ taskbar(task tray)にbatteryの残量をサークルアイコンで表示する�
 ### Requirement
 
 pip3 install wxPython psutil opencv-python numpy pathlib2
+
+#### For Windows
+
+VisualC++ is required for building wxPython.
+- [https://visualstudio.microsoft.com/visual-cpp-build-tools/]
 
 #### For Ubuntu
 
